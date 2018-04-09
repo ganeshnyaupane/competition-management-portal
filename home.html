@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<title>competitions management portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="1.css">
+<link rel="stylesheet" href="2.css">
+<link rel="stylesheet" href="3.css">
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Levels</button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="school.html" class="w3-bar-item w3-button">SCHOOL LEVEL</a>
+      <a href="intermediate.html" class="w3-bar-item w3-button">INTERMEDIATE LEVEL</a>
+      <a href="bachelor.html" class="w3-bar-item w3-button">BACHELOR LEVEL</a>
+    </div>
+  </div>
+
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Domains</button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="technical.html" class="w3-bar-item w3-button">TECHNICAL</a>
+      <a href="cultural.html" class="w3-bar-item w3-button">CULTURAL</a>
+      <a href="sports.html" class="w3-bar-item w3-button">SPORTS</a>
+    </div>
+  </div>
+<a href="eventform.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Register an Event</a>
+
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+<!--  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">--->
+  <h3>GANESH NYAUPANE</h3>
+  <p>Web Designer</p>
+</div>
+
+<div class="w3-quarter">
+<!--  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">-->
+  <h3>SWEETY</h3>
+  <p>Technical</p>
+</div>
+
+<div class="w3-quarter">
+<!--  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"> -->
+  <h3>SPANDANA</h3>
+  <p>PRESENTER</p>
+</div>
+
+<div class="w3-quarter">
+<!--  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"> -->
+  <h3>SHARVANI</h3>
+  <p>PAPER WORKS</p>
+</div>
+
+<div class="w3-quarter">
+<!--  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"> -->
+  <h3>LAXMI</h3>
+  <p>SUPPORT</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our work</h2>
+<p>In our previous life, when we were running a Business Consulting Start-up, 
+we always had interns from different colleges working learning & having fun with us! 
+We loved working with students as they brought in tremendous energy and new perspectives into the company. 
+ </p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="Technical.jpg" alt="Vernazza" style="width:100%">
+  <div class="w3-container">
+  <h3>Technical</h3>
+  <h4>Events</h4>
+  <p>paper presentations</p>
+  <p>Debate</p>
+  <p>Project expo</p>
+  <p>Hackton</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="sports.jpg" alt="Cinque Terre" style="width:100%">
+  <div class="w3-container">
+  <h3>Sports</h3>
+  <h4>Events</h4>
+  <p>chess</p>
+  <p>cricket</p>
+  <p>football</p>
+  <p>basket ball</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="cultural.jpg" alt="Monterosso" style="width:100%">
+  <div class="w3-container">
+  <h3>Cultural</h3>
+  <h4>Events</h4>
+  <p>Dance</p>
+  <p>Singing</p>
+  <p>Drama</p>
+  <p>Acting</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- upcoming events-->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>UpComing Events</h2>
+    <p>can help you out!</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">ZAVATRA</p>
+        </li>
+        <li class="w3-padding-16">TECHNICAL </li>
+        <li class="w3-padding-16"> HACKTHONS</li>
+        <li class="w3-padding-16">CULTURAL</li>
+        <li class="w3-padding-16"><b>987456231 (kavya)</b>contact</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"> at MLR Institute of Technology</h2>
+          <span class="w3-opacity">Dundigal</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large">MORE DETAILS</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">QUEST 2k18</p>
+        </li>
+        <li class="w3-padding-16">Project Expo</li>
+        <li class="w3-padding-16">Creativite</li>
+        <li class="w3-padding-16">workshops</li>
+        <li class="w3-padding-16"><b>9165324781(shubam)</b> contact</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"> at JNTUH College of Engineering</h2>
+          <span class="w3-opacity">kukutpally</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large">more details</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">SPORTS ZONALS (Zonal A) </p>
+        </li>
+        <li class="w3-padding-16">Badminton</li>
+        <li class="w3-padding-16">Table tennis</li>
+        <li class="w3-padding-16">basketball</li>
+        <li class="w3-padding-16"><b>9867453311(Reshma)</b>contact</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"> at MLR Institute of Technology</h2>
+          <span class="w3-opacity">dundigal</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"> more details</button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Office Address</h3>
+      <p>IOT lab</p>
+      <p>cse department</p>
+      <p>9839384922</p>
+      <p> support@cmp.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
